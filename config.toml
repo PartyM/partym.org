@@ -1,0 +1,4 @@
+baseURL = "http://partym.org/"
+languageCode = "en-us"
+title = "PartyM Official Site"
+theme = "partym"

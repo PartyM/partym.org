@@ -1,0 +1,31 @@
+{{ partial "header.html" . }} {{ partial "subheader.html" . }} {{ partial "socialshare.html" . }}
+
+<link rel="stylesheet" href="css/toc.css">
+
+
+<body lang="en">
+    <div class="row white">
+        <!--<div class="card-panel col s2 l2 z-depth-0">
+            <div id="toc" style="padding-top:15px">
+                {{ .TableOfContents }}
+            </div>
+        </div>-->
+        <div class="container">
+            <div class="col">
+                <section id="main" class="col">
+                    <h2 id="title" class="center-align">{{ .Title }}</h2>
+                    <div>
+                        <article id="content">
+                            <link rel="stylesheet" href="css/content.css">
+                            <p class="flow-text">{{ .Content }}</p>
+                        </article>
+                    </div>
+                    <p>Author(s): {{ .Params.author }}</p>
+                    <p>Updated On: {{ .Date }}</p>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+{{ partial "footer.html" . }}

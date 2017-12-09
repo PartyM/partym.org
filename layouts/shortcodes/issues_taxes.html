@@ -1,0 +1,204 @@
+<div class="row">
+    <div class="col">
+        <div id="chart" class="center-align"></div>
+    </div>
+    <div class="col">
+        <!--<div class="input-field">
+            <i class="material-icons prefix">attach_money</i>
+            <input disabled value="15081" id="start_forumula" type="text">
+            <label for="last_name">Starting income</label>
+        </div>
+        <div class="input-field">
+            <i class="material-icons prefix">attach_money</i>
+            <input disabled value="300000" id="end_formula" type="text">
+            <label for="last_name">Max Income</label>
+        </div>-->
+        <div class="input-field">
+            <i class="material-icons prefix">attach_money</i>
+            <input value="60000" id="input_income" type="text">
+            <label for="last_name">yearly income</label>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col s6">
+        <div class="card-panel">
+            <div>
+                <p>Your effective tax rate:</p>
+                <h5 id="taxRate"></h5>
+            </div>
+        </div>
+    </div>
+    <div class="col s6">
+        <div class="card-panel">
+            <div>
+                <p>Yearly taxes due:</p>
+                <h5 id="taxDue"></h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/3.16.4/math.min.js"></script>
+
+<script>
+    function getInputValue() {
+        amount = document.getElementById('input_income').value;
+
+        //remove non-numeric chars
+        amount = amount.replace(/\D/g, '');
+
+        if (amount == '') {
+            amount = 0;
+        }
+
+        amount = parseInt(amount);
+
+        return amount;
+    };
+
+    function interpolateAndCalc(amount) {
+        //if above 300k, calculate at 300k but graph at the inputted value
+        if (amount > 300000) {
+            effectiveAmount = 300000
+        } else if (amount < 15081) {
+            taxRate = 0;
+            taxDue = 0;
+            //taxDueMonthly = 0;
+
+            return {
+                taxRate: taxRate,
+                taxDue: taxDue
+            };
+        } else {
+            effectiveAmount = amount
+        };
+
+        //linear interpolation
+        //effective tax rate
+        taxRate = 0 + (effectiveAmount - 15080) * ((25 - 0) / (300000 - 15080));
+
+        //Tax paid for year
+        taxDue = amount * (taxRate / 100);
+
+        //always round up
+        if ((taxDue > 0) & (taxDue < 1)) {
+            taxDue = 1;
+        }
+
+        //round to nearest dollar
+        taxDue = math.round(taxDue);
+
+        return {
+            taxRate: taxRate,
+            taxDue: taxDue
+                //            taxDueMonthly: taxDue / 12
+        };
+    };
+
+    function doneTyping() {
+        formatedInput = getInputValue();
+        data = interpolateAndCalc(formatedInput);
+
+        _iv = document.getElementById('input_income');
+        _iv.innerHTML = formatedInput;
+
+        _tr = document.getElementById('taxRate');
+        _tr.innerHTML = data.taxRate.toFixed(2) + "%";
+
+        // Create our number formatter.
+        var formatter = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD',
+            minimumFractionDigits: 2,
+        });
+
+        _td = document.getElementById('taxDue');
+        _td.innerHTML = formatter.format(data.taxDue);
+
+        // _tdm = document.getElementById('taxDueMonthly');
+        //_tdm.innerHTML = formatter.format(data.taxDueMonthly);
+
+        return data;
+    };
+</script>
+
+<script>
+    //Set up graph
+    CHART = document.getElementById('chart');
+
+    var traceMarker = {
+        x: [getInputValue()],
+        y: [doneTyping().taxRate],
+        mode: 'markers',
+        marker: {
+            color: 'rgb(219, 64, 82)',
+            size: 12
+        },
+        name: 'You'
+    };
+
+    var traceIncomes = {
+        x: [0, 15081, 300000, 350000],
+        y: [0, 0, 25, 25],
+        mode: 'lines',
+        name: 'Tax Rate'
+    };
+
+    var data = [traceMarker, traceIncomes];
+
+    var layout = {
+        autosize: false,
+        width: 400,
+        height: 300,
+        margin: {
+            l: 50,
+            r: 10,
+            b: 50,
+            t: 30,
+            pad: 4
+        },
+        xaxis: {
+            title: 'Yealy Income ($)',
+            titlefont: {
+                family: 'Courier New, monospace',
+                size: 18,
+                color: '#7f7f7f'
+            }
+        },
+        yaxis: {
+            title: 'Tax Rate (%)',
+            titlefont: {
+                family: 'Courier New, monospace',
+                size: 18,
+                color: '#7f7f7f'
+            }
+        }
+        //paper_bgcolor: '#7f7f7f',
+        //plot_bgcolor: '#c7c7c7'
+    };
+
+    Plotly.newPlot(CHART, data, layout);
+
+
+    //call func on key press on element
+    var $input = $('#input_income');
+
+    $input.on('keyup', function() {
+        data = doneTyping();
+
+        traceMarker = {
+            x: [getInputValue()],
+            y: [data.taxRate],
+            mode: 'markers',
+            marker: {
+                color: 'rgb(219, 64, 82)',
+                size: 12
+            },
+            name: 'You'
+        };
+        Plotly.newPlot(CHART, [traceMarker, traceIncomes], layout);
+
+    });
+</script>

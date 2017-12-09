@@ -1,0 +1,13 @@
+nav#TableOfContents{
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+nav#TableOfContents li a{
+    color: grey;
+    font-size: 12px;
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 25px;
+}

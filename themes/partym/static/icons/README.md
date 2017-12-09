@@ -1,0 +1,1 @@
+Do not put files in here. Upload them to GCS and refer to their URL in your content.

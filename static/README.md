@@ -1,0 +1,1 @@
+This should be an empty Directory. Static files should be uploaded to GCS and referred to by URL.
