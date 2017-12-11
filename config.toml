@@ -1,4 +1,4 @@
-baseURL = "http://partym.org/"
+baseURL = "http://www.partym.org/"
 languageCode = "en-us"
 title = "PartyM Official Site"
 theme = "partym"
