@@ -155,7 +155,7 @@
             l: 50,
             r: 10,
             b: 50,
-            t: 40,
+            t: 0,
             pad: 4
         },
         xaxis: {
@@ -178,7 +178,9 @@
         //plot_bgcolor: '#c7c7c7'
     };
 
-    Plotly.newPlot(CHART, data, layout);
+    Plotly.newPlot(CHART, data, layout, {
+        staticPlot: true
+    });
 
 
     //call func on key press on element

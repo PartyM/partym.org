@@ -33,6 +33,12 @@ blockquote {
     border-left: 5px solid black;
 }
 
+
+/*
+Responsive iframes from:
+https://benmarshall.me/responsive-iframes/
+*/
+
 .intrinsic-container {
     position: relative;
     height: 0;
