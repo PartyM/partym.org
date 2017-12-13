@@ -163,3 +163,4 @@ There are a number of other popular deductions, credits and other features of ou
 
 1 Dec 2017 - Initial Revision
 
+[View all changse on Github](https://github.com/PartyM/partym.org/commits/master/content/issues/taxes.md)<i class="fa fa-github fa-2x" aria-hidden="true"></i>
