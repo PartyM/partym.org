@@ -87,4 +87,5 @@ One size doesn't fit all; The differences between the poor, middle class and ric
 [2][Wikipedia - Moderate](https://en.wikipedia.org/wiki/Moderate)
  
 ###### Revision History
-1 Dec 2017 - Initial Draft
+
+1 Dec 2017 - Initial Revision - [View all changes on Github ](https://github.com/PartyM/partym.org/commits/master/content/philosophy/index.md)<i class="fa fa-github fa-2x" aria-hidden="true"></i>
