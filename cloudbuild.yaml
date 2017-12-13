@@ -1,0 +1,16 @@
+steps:
+- name: 'quay.io/doublerr/docker-alpine-hugo-git-bash'
+  args: [ 'git','clone', 'https://github.com/partym/partym.org', '/src/partym.org']
+  volumes: 
+  - name: 'src'
+    path: '/src'
+- name: 'quay.io/doublerr/docker-alpine-hugo-git-bash'
+  args: ['hugo', '-s', '/src/partym.org']
+  volumes: 
+  - name: 'src'
+    path: '/src'
+- name: gcr.io/cloud-builders/gsutil
+  args: ['-m', 'rsync', '-r', '/src/partym.org/public/', 'gs://www.partym.org']
+  volumes: 
+  - name: 'src'
+    path: '/src'
