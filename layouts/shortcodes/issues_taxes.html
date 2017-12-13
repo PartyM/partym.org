@@ -1,9 +1,15 @@
 <div class="row">
-    <div class="col">
+    <div class="col s12 m6 l6">
+        <div class="input-field">
+            <i class="material-icons prefix">attach_money</i>
+            <input value="60000" id="input_income" type="text">
+            <label for="last_name">yearly income</label>
+        </div>
+    </div>
+    <div class="col s12 m6 l6">
         <div id="chart" class="center-align"></div>
     </div>
-    <div class="col">
-        <!--<div class="input-field">
+    <!--<div class="input-field">
             <i class="material-icons prefix">attach_money</i>
             <input disabled value="15081" id="start_forumula" type="text">
             <label for="last_name">Starting income</label>
@@ -13,15 +19,9 @@
             <input disabled value="300000" id="end_formula" type="text">
             <label for="last_name">Max Income</label>
         </div>-->
-        <div class="input-field">
-            <i class="material-icons prefix">attach_money</i>
-            <input value="60000" id="input_income" type="text">
-            <label for="last_name">yearly income</label>
-        </div>
-    </div>
 </div>
 <div class="row">
-    <div class="col s6">
+    <div class="col s6 m6 l6">
         <div class="card-panel">
             <div>
                 <p>Your effective tax rate:</p>
@@ -29,7 +29,7 @@
             </div>
         </div>
     </div>
-    <div class="col s6">
+    <div class="col s6 m6 l6">
         <div class="card-panel">
             <div>
                 <p>Yearly taxes due:</p>
@@ -38,7 +38,6 @@
         </div>
     </div>
 </div>
-
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/3.16.4/math.min.js"></script>
 
@@ -149,14 +148,14 @@
     var data = [traceMarker, traceIncomes];
 
     var layout = {
-        autosize: false,
-        width: 400,
+        autosize: true,
+        //width: 400,
         height: 300,
         margin: {
             l: 50,
             r: 10,
             b: 50,
-            t: 30,
+            t: 40,
             pad: 4
         },
         xaxis: {

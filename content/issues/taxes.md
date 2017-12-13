@@ -10,7 +10,7 @@ toc = false
 
 ### Individual Income Tax
 
-#### Calculator
+### Calculator
 
 {{< issues_taxes >}}
 
@@ -77,11 +77,16 @@ Finally, the tax code has been used as a vehicle for entitlements. The tax code 
 #### 2010 - 2015
 Below is the comparison from 2015 IRS data. As you can see, if the maximum tax rate is at 25%, this model results in ~5.6% less tax revenue. However, since the economy has been strong for many years, it's likely the maximum tax rate would have been raised to 30% which results in a ~13.4% tax revenue gain.
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ5P8ctMjtDEjJl1nYrbzF-VnN3x6fLUAUnaflX-r20SsiK3uxbBY0QfkYXQpD3eA_8CnMAvmQwcW1-/pubhtml?gid=97905787&amp;single=true&amp;widget=true&amp;headers=false" width="800" height="120"></iframe>
+<div class="intrinsic-container">
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ5P8ctMjtDEjJl1nYrbzF-VnN3x6fLUAUnaflX-r20SsiK3uxbBY0QfkYXQpD3eA_8CnMAvmQwcW1-/pubhtml?gid=97905787&amp;single=true&amp;widget=true&amp;headers=false" allowfullscreen></iframe>
+</div>
 
 Let's compare starting back at 2010 with PartyM's maximum tax rate at 25%. We'll then add 1% to the maximum every year until 2015.
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ5P8ctMjtDEjJl1nYrbzF-VnN3x6fLUAUnaflX-r20SsiK3uxbBY0QfkYXQpD3eA_8CnMAvmQwcW1-/pubhtml?gid=997658946&amp;single=true&amp;widget=true&amp;headers=false" width="800" height="250" ></iframe>
+
+<div class="intrinsic-container" style="height:260px;">
+    <iframe style="height:260px;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ5P8ctMjtDEjJl1nYrbzF-VnN3x6fLUAUnaflX-r20SsiK3uxbBY0QfkYXQpD3eA_8CnMAvmQwcW1-/pubhtml?gid=997658946&amp;single=true&amp;widget=true&amp;headers=false" allowfullscreen></iframe>
+</div>
 
 This example would have resulted in an additional ~$1 Trillion revenue gain over the last 5 years for the federal government without dramatically impacting anyone's tax rate year by year. 
 
@@ -107,7 +112,7 @@ Losers:
 
 > Tax professionals and corporations focused on individual tax returns.
 
-### Popular Deductions/Credits/Loopholes
+### Popular Deductions / Credits / Loopholes
 
 Popular deductions like the child tax credit would be delivered via another mechanism such as a new nonprofit or appropriate government entity. These credits would all have diminishing returns making them more effective at lower income levels and diminishing to $0 at higher income levels, which is not dissimilar to their effect on the taxable income today.
 
