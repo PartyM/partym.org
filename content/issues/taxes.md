@@ -1,7 +1,7 @@
 +++
 categories = [ "issue" ]
 date = 2017-12-01T14:59:37-06:00
-description = ""
+description = "PartyM Individual Income Tax Policy"
 draft = false
 tags = [ "issue", "taxes"]
 title= "Taxes"
@@ -23,7 +23,7 @@ We want to completely overhaul our tax code which has become too complicated [1]
 
 The only real winners are those who can take advantage of every deduction possible. Our idea is to **remove tax brackets entirely and apply a standard mathematical formula based solely on income.** 
 
-This would significantly simplify the tax code and shrink the IRS. Popular deductions (i.e. Child tax credit, etc) would still exist but would be delivered via another mechanism. Our changes to the tax code will return more value to the lower working classes while still being fair to the upper classes.
+This would significantly simplify the tax code and shrink the IRS. Popular methods of lowering taxable income are still availalbe and popular tax credits (i.e. Child tax credit, etc) would still exist but would be delivered via another mechanism. Our changes to the tax code will return more value to the lower working classes while still being fair to the upper classes.
 
 ### The Algorithm
 
@@ -125,7 +125,7 @@ We will continue to allow individuals and corporations to reduce their taxable i
 1. Charitable giving
 1. State taxes paid
 
-#### What about…?
+#### What about …?
 
 There are a number of other popular deductions, credits and other features of our tax system not accounted for yet. Here is a running list and our initial (still to be fully thought out) ideas on our approach to them:
 
@@ -133,9 +133,9 @@ There are a number of other popular deductions, credits and other features of ou
 
 1. Non-profits - Not much is expected to change here. Non-profits will continue to operate tax free or at a flat 1% tax rate.
 
-1. Long Term Capital Gains - 
+1. Long Term Capital Gains - We are still discussing the approproate approach here.
 
-1. Property Taxes - 
+1. Property Taxes -  Credits here would ideally be delivered to property owners via their loan administration companies (for escrow accounts) or via the state (for non-escrow) accounts.
 
 1. Higher education grants - These grants would not be part of your income calculation meaning you would not pay any taxes on them.
 
