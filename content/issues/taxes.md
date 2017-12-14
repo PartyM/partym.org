@@ -25,7 +25,7 @@ Our tax place completely overhauls the U.S tax code (2017) which has become too 
 
 The only real winners are those who can take advantage of every deduction possible. Our idea is to **remove tax brackets entirely and apply a standard mathematical formula based solely on income.** 
 
-We would significantly simplify the tax code and shrink the IRS. Popular methods of lowering taxable income are still availalbe and popular tax credits (i.e. Child tax credit) would still exist but would be delivered via another mechanism. These changes to the tax code will return more value to the lower working classes while still being fair to the upper classes.
+We would significantly simplify the tax code and shrink the IRS. Popular methods of lowering taxable income are still available and popular tax credits (i.e. Child tax credit) would still exist but would be delivered via another mechanism. These changes to the tax code will return more value to the lower working classes while still being fair to the upper classes.
 
 ### The Algorithm
 
