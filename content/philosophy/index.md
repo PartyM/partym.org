@@ -80,12 +80,12 @@ One size doesn't fit all; The differences between the poor, middle class and ric
 
 ---
 
-###### References
+##### References
 
 [1][Membership of the 115th Congress: A Profile](https://fas.org/sgp/crs/misc/R44762.pdf)
 
 [2][Wikipedia - Moderate](https://en.wikipedia.org/wiki/Moderate)
  
-###### Revision History
+##### Revision History
 
 1 Dec 2017 - Initial Revision - [View all changes on Github ](https://github.com/PartyM/partym.org/commits/master/content/philosophy/index.md)<i class="fa fa-github fa-2x" aria-hidden="true"></i>

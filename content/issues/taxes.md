@@ -14,16 +14,18 @@ toc = false
 
 {{< issues_taxes >}}
 
+***No Data is collected from this calculator**
+
 ### Synopsis
 
-We want to completely overhaul our tax code which has become too complicated [1]. A complicated code hurts both 
+Our tax place completely overhauls the U.S tax code (2017) which has become too complicated [1]. A complicated code hurts both 
 
 1. the citizens by creating undue burden/confusion and 
 1. the government by not allowing for proper budgeting or forecasting and requiring a large IRS 
 
 The only real winners are those who can take advantage of every deduction possible. Our idea is to **remove tax brackets entirely and apply a standard mathematical formula based solely on income.** 
 
-This would significantly simplify the tax code and shrink the IRS. Popular methods of lowering taxable income are still availalbe and popular tax credits (i.e. Child tax credit, etc) would still exist but would be delivered via another mechanism. Our changes to the tax code will return more value to the lower working classes while still being fair to the upper classes.
+We would significantly simplify the tax code and shrink the IRS. Popular methods of lowering taxable income are still availalbe and popular tax credits (i.e. Child tax credit) would still exist but would be delivered via another mechanism. These changes to the tax code will return more value to the lower working classes while still being fair to the upper classes.
 
 ### The Algorithm
 
@@ -53,7 +55,7 @@ Beyond the base formula we also impose the following rules:
 
 ### Rationale
 
-The initial bracket is 10% meaning the poorest citizens have to give up 10% of their income throughout the year. These citizens will see a return but they'll have to wait until Taxes are filed to get it. Strangely, the effective tax rate actually goes down then increases as expected and finally it levels out before dipping again slightly at the highest level.
+The initial bracket is 10% which means the poorest citizens have to give up 10% of their income throughout the year. These citizens will see a return but they'll have to wait until Taxes are filed to get it. Strangely, the effective tax rate actually goes down before increasing as expected through the middle classes. Finally it levels out before dipping again slightly at the highest tier.
  
 <div class="container">
     <img class="responsive-img" src="https://storage.googleapis.com/static.partym.org/issues/taxes/2015%20-%20income%20classes.png"> </img>
@@ -67,13 +69,13 @@ The initial bracket is 10% meaning the poorest citizens have to give up 10% of t
 ***These graphs are misleading due to the scale of the x-axis, which changes dramatically in the upper incomes. The rate of growth for all of these plans is not as aggressive as it first seems.**
 
 The credits and deductions in the current tax code also cause many issues. There are so many deductions and credits that it’s hard to know if you’ve used all available to you and legislative bodies may accidently introduce loopholes due to a lack of understanding of all available deductions.
-These only have substantial impact to those who are able itemize their returns and those taking the standard deduction will never be able to receive. This means that incentives are lost to those who cannot possibly leverages these credits. It's also impossible to know how much you'll actually owe in taxes until after you've filed, making budgeting difficult.
+Credits only have substantial impact to those who are able itemize their returns and those taking the standard deduction will never be able to receive. The incentives are lost to those who cannot possibly leverages these credits. Also, it's impossible to know how much you'll actually owe in taxes until after you've filed, making budgeting difficult.
 
-On Tax returns; Receiving a large tax return feels great (feels like free money) but the reality is that this money was yours all year long. You have effectively loaned it to the government until you’ve filed your taxes and they are returning the portion that you’ve overpaid. In our model, the goal is to remove these returns and get everyone to pay “just the right amount” to the government, freeing up this money throughout the year for the citizens.
+Receiving a large tax return feels great (like free money) but the reality is that this money was yours all year long. You have effectively loaned it to the government until you’ve filed your taxes and they are returning the portion that you’ve overpaid. In our model, the goal is to remove these returns and get everyone to pay **just the right amount** to the government, freeing up this money throughout the year for the citizens.
 
-There are more general issues such as the inability for the IRS to be audit everyone or be sure the the system isn’t being abused. The complicated nature of deductions has caused an entire industry to be created around them. This industry does provide a valuable service but it's unfortunate that it needs to exist.
+There are more general issues such as the inability for the IRS to be audit everyone or be sure the the system isn’t being abused. The complicated nature of deductions has caused an entire industry (tax filing assistance) to be created around them. This industry does provide a valuable service but it's unfortunate that it needs to exist.
 
-Finally, the tax code has been used as a vehicle for entitlements. The tax code is an easy way to credit and pass out a new entitlement but this model has become too bloated with too many entitlements. Due to these entitlements, reforming the tax code is extremely difficult since minor changes can have drastic impacts on an entitlements that many people rely on.
+Finally, the tax code has been abused as a vehicle for entitlements. The tax code is an easy space to add a credit and pass out a new entitlement but this model has become too bloated with too many entitlements. Due to these entitlements, reforming the tax code is extremely difficult since minor changes can have drastic impacts on an entitlements that many people rely on.
 
 ### Revenue Comparisons
 
@@ -84,7 +86,7 @@ Below is the comparison from 2015 IRS data. As you can see, if the maximum tax r
     <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ5P8ctMjtDEjJl1nYrbzF-VnN3x6fLUAUnaflX-r20SsiK3uxbBY0QfkYXQpD3eA_8CnMAvmQwcW1-/pubhtml?gid=97905787&amp;single=true&amp;widget=true&amp;headers=false" allowfullscreen></iframe>
 </div>
 
-Let's compare starting back at 2010 with PartyM's maximum tax rate at 25%. We'll then add 1% to the maximum every year until 2015.
+Now we'll compare going back at 2010 with PartyM's maximum tax rate at 25%. We'll then add 1% to the maximum every year until 2015.
 
 
 <div class="intrinsic-container" style="height:260px;">
@@ -142,7 +144,9 @@ There are a number of other popular deductions, credits and other features of ou
 
 1. Higher education grants - These grants would not be part of your income calculation meaning you would not pay any taxes on them.
 
-#### References
+---
+
+##### References
 
 [1] https://www.law.cornell.edu/uscode/text/26
 
@@ -162,6 +166,6 @@ There are a number of other popular deductions, credits and other features of ou
 
 [9] https://www.irs.gov/statistics/irs-budget-and-workforce
 
-#### Revision History
+##### Revision History
 
 1 Dec 2017 - Initial Revision - [View all changes on Github ](https://github.com/PartyM/partym.org/commits/master/content/issues/taxes.md)<i class="fa fa-github fa-2x" aria-hidden="true"></i>
