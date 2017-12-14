@@ -58,6 +58,9 @@ The initial bracket is 10% meaning the poorest citizens have to give up 10% of t
 <div class="container">
     <img class="responsive-img" src="https://storage.googleapis.com/static.partym.org/issues/taxes/2015%20-%20income%20classes.png"> </img>
 </div>
+<div class="container">
+    <img class="responsive-img" src="https://storage.googleapis.com/static.partym.org/issues/taxes/2015-partym.png"> </img>
+</div>
 
 ***Based on 2015 IRS data[3]**
 
