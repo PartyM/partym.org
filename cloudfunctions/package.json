@@ -1,0 +1,13 @@
+{
+    "name": "access_logs_to_bq",
+    "version": "0.0.1",
+    "private": true,
+    "author": "PartyM",
+    "engines": {
+        "node": ">=4.3.2"
+    },
+    "dependencies": {
+        "@google-cloud/storage": "1.5.1",
+        "@google-cloud/bigquery": "0.11.1"
+    }
+}
