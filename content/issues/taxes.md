@@ -18,7 +18,7 @@ toc = false
 
 ### Synopsis
 
-Our tax place completely overhauls the U.S tax code (2017) which has become too complicated [1]. A complicated code hurts both 
+Our tax policy completely overhauls the U.S tax code (2017) which has become too complicated [1]. A complicated code hurts both 
 
 1. the citizens by creating undue burden/confusion and 
 1. the government by not allowing for proper budgeting or forecasting and requiring a large IRS 
