@@ -95,7 +95,7 @@ Now we'll compare going back at 2010 with PartyM's maximum tax rate at 25%. We'l
 
 This example would have resulted in an additional ~$1 Trillion revenue gain over the last 5 years for the federal government without dramatically impacting anyone's tax rate year by year. 
 
-***Due to the non-granular nature of the data released by the IRS, our calculations use the mean of each income range to do our comparison calculations.**
+***Due to the non-granular nature of the data released by the IRS, our calculations use the mean of each income range to do our comparisons.**
 
 #### Cost Savings
 
