@@ -109,7 +109,7 @@ Winners:
 
 > Everyone should see a lower effective tax rate when our maximum tax rate is 25%.
 
-> Everyone (including companies) should enjoy a simpler tax filing process. Assuming the tax filing market is rationale, we should also see a reduction in cost to file taxes.
+> Everyone (including companies) should enjoy a simpler tax filing process. Assuming the tax filing market is rational, we should also see a reduction in cost to file taxes.
 
 Losers:
 
