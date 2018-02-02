@@ -31,7 +31,7 @@ We would significantly simplify the tax code and shrink the IRS. Popular methods
 
 The basis for the algorithm is the formula for Linear Interpolation [2]. We use formula to define our tax rate between a starting point and a high point. Your income is calculated on this line and defines your tax rate for that year. The basis is the following formula:
 
-$$Trate = Istart + (I - Istart)\frac{Rmax - Rmin}{Imax - Istart}$$
+$$Trate = Rmin + (I - Istart)\frac{Rmax - Rmin}{Imax - Istart}$$
 
 where 
 
